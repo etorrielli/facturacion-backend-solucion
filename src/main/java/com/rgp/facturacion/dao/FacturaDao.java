@@ -30,7 +30,7 @@ public class FacturaDao {
 
 	@SuppressWarnings("unchecked")
 	public List<Factura> list() throws Exception {
-		return sessionFactory.getCurrentSession().createQuery("from Factura").list();
+		return sessionFactory.getCurrentSession().createQuery("from Factura order by 1 desc").list();
 	}
 
 	
